@@ -49,6 +49,7 @@ async function fetchProductByASIN(asin) {
         review_count: data.reviews_total || 0,
         sales_rank: data.sales_rank || null,
         metadata: data,
+        description: data.description || "",
       },
       { returning: true }
     );

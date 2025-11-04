@@ -19,6 +19,7 @@ const Product = sequelize.define(
     sales_rank: { type: DataTypes.BIGINT },
     price_history: { type: DataTypes.JSONB },
     metadata: { type: DataTypes.JSONB },
+    description: { type: DataTypes.TEXT },
   },
   {
     tableName: "products",
